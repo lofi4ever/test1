@@ -1,0 +1,465 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+html, body
+  height: 100%
+  overflow-x: hidden
+  font-family: Calibri
+  font-size: 14px
+.wrapper
+  max-width: 1030px
+  margin: 0 auto
+  padding: 0 30px
+body
+  background-image: url(../img/header-bg.png)
+  background-size: contain
+  background-repeat: no-repeat
+.h2
+  color: #461f02
+  font-family: Georgia
+  font-size: 35px
+  font-style: italic
+  line-height: 48px
+  margin-bottom: 32px
+.h3
+  color: #461f02
+  font-family: Georgia
+  font-size: 25px
+  font-style: italic
+  line-height: 35px
+  margin-top: 28px
+.h4
+  color: #461f02
+  font-family: Georgia
+  font-size: 19px
+  font-style: italic
+  line-height: 35px
+  margin-top: 20px
+.h5
+  color: #461f02
+  font-family: Georgia
+  font-size: 17px
+  font-style: italic
+  line-height: 22px
+  margin-bottom: 10px
+.header-topline
+  display: flex
+  justify-content: space-between
+  padding: 12px 0
+.header-logo
+  max-width: 274px
+  img
+    width: 100%
+.topline-nav
+  &__list
+    display: flex
+    list-style-type: none
+    font-size: 13px
+    color: #766259
+  &__item
+    margin-right: 35px
+    &:last-child
+      margin-right: 0
+  &__link
+    color: #766259
+    text-decoration: underline
+    text-decoration-color: #766259
+    &:hover
+      text-decoration: none
+.topline-info
+  display: flex
+  list-style-type: none
+  font-size: 13px
+  color: #766259
+  &__link
+    color: #766259
+  &__item
+    display: flex
+    align-items: center
+    margin-left: 35px
+    img
+      margin-right: 7px
+    &:first-child
+      margin-left: 0
+.header-midline
+  padding: 20px 0 22px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-top: 1px solid rgba(#603a1a, .3)
+  border-bottom: 1px solid rgba(#603a1a, .3)
+.header-search
+  input
+    box-shadow: inset 0 1px 2px rgba(96, 58, 26, 0.22)
+    border-radius: 18px
+    background-color: #ffffff
+    width: 330px
+    height: 36px
+    border: none
+    padding: 12px 33px
+    background-image: url(../img/search.png)
+    background-repeat: no-repeat
+    background-position: 14px center
+    &::placeholder
+      color: #766259
+      font-family: Calibri
+      font-size: 13px
+.header-phone
+  color: #461f02
+  font-family: Georgia
+  font-size: 28px
+  font-style: italic
+  flex: none
+  &__link
+    color: #766259
+    font-family: Calibri
+    margin-top: 6px
+    font-size: 13px
+    display: block
+    text-align: right
+    text-decoration: underline
+    text-decoration-style: dashed
+    text-decoration-color: #766259
+    &:hover
+      text-decoration: none
+.header-bottomline
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 6px 0 18px
+.hamburger
+  display: none
+.bottomline-nav
+  &__list
+    display: flex
+    list-style-type: none
+  &__item
+    margin-right: 35px
+  &__link
+    color: #461f02
+    font-family: Calibri
+    font-size: 15px
+    font-weight: 700
+    text-transform: uppercase
+    transition: .3s ease
+    &:hover
+      color: rgba(#461f02, .7)
+.bottomline-price
+  display: flex
+  align-items: center
+  color: #461f02
+  font-family: Calibri
+  font-size: 17px
+  font-weight: 700
+  .sm
+    font-size: 14px
+  .basket
+    margin-right: 4px
+.basket
+  position: relative
+  &__amount
+    position: absolute
+    top: 3px
+    right: 5px
+    font-size: 11px
+    color: #fff
+
+.main
+  .wrapper
+    padding-top: 45px
+    padding-bottom: 72px
+    position: relative
+    border-top: 10px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to bottom right, transparent 42%, #fff 42%), linear-gradient(to bottom left, transparent 42%, #fff 42%), linear-gradient(to top right, transparent 42%, skyblue 42%), linear-gradient(to top left, transparent 42%, skyblue 42%)
+    background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x
+    background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%
+    background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px
+    background-clip: padding-box, border-box, border-box, border-box, border-box
+    background-origin: padding-box, border-box, border-box, border-box, border-box
+.switcher
+  display: flex
+  &__case
+    margin: 0
+    border: 1px solid #f0e4ca
+    display: block
+    padding: 20px 40px 18px
+    &:first-child  
+      border-radius: 4px 0 0 4px
+    &:last-child
+      border-radius: 0 4px 4px 0
+    &.active
+      background-color: rgba(#f0e4ca, .3)
+    &:hover
+      border: 1px dashed #d15b0a
+.form-wrapper
+  position: relative
+.status
+  position: absolute
+  top: 34px
+  right: 0
+  border: 1px solid #f0e4ca
+  width: 308px
+  .h3
+    padding: 0 20px
+.status-selection
+  list-style-type: none
+  padding: 24px 20px
+  &__item
+    display: flex
+    justify-content: space-between
+    margin-bottom: 17px
+    .key
+      color: #766259
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+    .value
+      color: #461f02
+      font-family: Calibri
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+      flex: none
+    &:last-child
+      margin-bottom: 0
+.status-discount
+  @extend .status-selection
+  background-color: rgba(#f0e4ca, .3)
+  border-top: 1px dashed #f0e4ca
+  &__item
+    @extend .status-selection__item
+.status-total
+  @extend .status-selection
+  background-color: rgba(#f0e4ca, .3)
+  display: flex
+  justify-content: space-between
+  padding-bottom: 41px
+  align-items: center
+  border-top: 1px dashed #f0e4ca
+  .value
+    color: #461f02
+    font-family: Calibri
+    font-size: 20px
+    font-weight: 700
+    line-height: 17px
+    flex: none
+.form
+  max-width: 390px
+  input[type="text"], select
+    border: 1px solid #c4b7b1
+    border-radius: 2px
+    padding: 12px 11px 10px
+    width: 185px
+  label
+    color: #817068
+    font-family: Calibri
+    font-size: 14px
+    font-weight: 400
+    line-height: 35px
+  input[type="submit"]
+    background-color: transparent
+    border-radius: 2px
+    border: 1px solid #ff6900
+    color: #ff7700
+    font-family: Calibri
+    font-size: 14px
+    font-weight: 700
+    padding: 17px 42px 17px 30px
+    text-align: left
+    margin-left: auto
+    display: block
+    background-image: url(../img/arrow-right.png)
+    background-repeat: no-repeat
+    background-position: 90% center
+    margin-top: 28px
+.input-wrap
+  display: inline-block
+  margin-right: 8px
+  width: 185px
+  vertical-align: top
+  label
+    display: block
+    margin-left: 10px
+.error-box
+  color: #958781
+  font-family: Calibri
+  font-size: 11px
+  font-style: italic
+  line-height: 12px
+  margin-top: 4px
+select
+  appearance: none
+  background-image: url(../img/arrow-down.png)
+  background-repeat: no-repeat
+  background-position: 90% center
+.form-radiogroup
+  max-width: 390px
+  input[type="radio"]
+    visibility: hidden
+  label
+    color: #461f02
+    font-size: 17px
+    line-height: 20px
+    .sm
+      color: #c4b7b1
+      font-size: 13px
+      display: block
+      max-width: 278px
+  &__item
+    padding: 17px 16px 20px
+    border: 1px dashed #f0e4ca
+    display: flex
+    cursor: pointer
+    align-items: baseline
+    .custom-radiobutton
+      margin-right: 14px
+      flex: none
+    &.active
+      background-color: rgba(#f0e4ca, .3)
+      border: 1px solid #f0e4ca
+      .custom-radiobutton
+        &:after
+          content: ""
+          position: absolute
+          top: 2px
+          right: 2px
+          border-radius: 50%
+          background-color: #ff6900
+          height: 8px
+          width: 8px
+.custom-radiobutton
+  position: relative
+  height: 14px
+  width: 14px
+  border-radius: 50%
+  border: 1px solid #c4b7b1
+  cursor: pointer
+#form-location
+  width: 246px
+#form-comment
+  max-width: 390px
+  width: 100%
+  height: 180px
+  border-radius: 2px
+  border: 1px solid #c4b7b1
+  margin-top: 8px
+  resize: none
+  padding: 14px
+
+.main-footer
+  background-image: url(../img/footer-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position-x: center
+  padding-top: 40px
+  line-height: 17px
+  .form-subscribe
+    margin-top: 12px
+    width: 230px
+.footer-flex
+  display: flex
+.footer-col
+  flex-grow: 1
+  flex-basis: 0
+  margin: 0 15px
+  &:first-of-type
+    margin-left: 0
+  &:last-of-type
+    margin-right: 0
+.footer-list
+  list-style-type: none
+  &__link
+    color: #766259
+    font-family: Calibri
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+.form-subscribe
+  position: relative
+  input[type="email"]
+    width: 100%
+    padding: 15px 48px 16px 14px
+    border-radius: 2px 0 0 2px
+    border: 1px solid #c4b7b1
+    background-color: #ffffff
+  input[type="submit"]
+    position: absolute
+    top: 0
+    right: 0
+    background-color: #ff6f00
+    background-image: url(../img/arrow-right-long.png)
+    border: none
+    background-repeat: no-repeat
+    height: 100%
+    background-position: center
+    width: 43px
+    border-radius: 0 2px 2px 0
+    transition: .3s ease
+    &:hover
+      background-color: #461f02
+.footer-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 11px 0 16px
+  border-top: 2px solid #ff6f00
+  position: relative
+  margin-top: 48px
+  &:before
+    content: ""
+    position: absolute
+    top: -7.5px
+    right: 50%
+    width: 12px
+    height: 12px
+    background-color: #fff
+    border-radius: 50%
+  &:after
+    content: ""
+    position: absolute
+    top: -5px
+    right: 50%
+    transform: translateX(-25%)
+    width: 8px
+    height: 8px
+    background-color: #ff6f00
+    border-radius: 50%
+.footer-soc
+  list-style-type: none
+  display: flex
+  &__item
+    margin-left: 7px
+
+.map-wrapper
+  height: 390px
+  margin-top: 20px
+  position: relative
+.map
+  display: none
+.map-descr
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  background: linear-gradient(transparent, #fff 30%, #fff)
+  height: 100px
+  color: #461f02
+  font-family: Calibri
+  font-size: 16px
+  font-weight: 700
+  line-height: 22px
+  display: flex
+  align-items: center
+  padding-left: 22px
+  padding-right: 22px
+  visibility: hidden
+  &.active
+    visibility: visible
+.map-container
+  height: 100%
+
+
+
+
+@import "media"

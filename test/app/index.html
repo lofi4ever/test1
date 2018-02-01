@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+</head>
+<body>
+  
+  <header class="main-header">
+    <div class="wrapper">
+      <div class="header-topline">
+        <nav class="topline-nav">
+          <ul class="topline-nav__list">
+            <li class="topline-nav__item"><a href="#" class="topline-nav__link">О магазине</a></li>
+            <li class="topline-nav__item"><a href="#" class="topline-nav__link">Доставка и самовывоз</a></li>
+            <li class="topline-nav__item"><a href="#" class="topline-nav__link">Оплата</a></li>
+            <li class="topline-nav__item"><a href="#" class="topline-nav__link">Контакты</a></li>
+            <li class="topline-nav__item"><a href="#" class="topline-nav__link">Блог</a></li>
+          </ul>
+        </nav>
+        <ul class="topline-info">
+          <li class="topline-info__item">
+            <img src="img/location-icon.png" alt="location">
+            <a href="#" class="topline-ingo__link">Город: Москва</a>
+          </li>
+          <li class="topline-info__item">
+            <img src="img/person-icon.png" alt="person">
+            <a href="#" class="topline-ingo__link">Личный кабинет</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-midline">
+        <a href="#" class="header-logo">
+          <img src="img/header-logo.png" alt="logo">
+        </a>
+        <div class="header-search">
+          <input type="text" placeholder="Найти что-нибудь">
+        </div>
+        <div class="header-phone">
+          +7 800 555-33-86
+          <a href="#" class="header-phone__link">
+            Обратный звонок
+          </a>
+        </div>
+      </div>
+      <div class="header-bottomline">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="bottomline-nav">
+          <ul class="bottomline-nav__list">
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Мельницы</a></li>
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Техника</a></li>
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Для выпечки</a></li>
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Посуда</a></li>
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Проращиватели</a></li>
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Детям</a></li>
+            <li class="bottomline-nav__item"><a href="#" class="bottomline-nav__link">Чай из Непала</a></li>
+          </ul>
+        </nav>
+        <div class="bottomline-price">
+          <div class="basket">
+            <img src="img/basket.png" alt="basket">
+            <div class="basket__amount">2</div>
+          </div>
+          13 990 <span class="sm">₽</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <div class="form-wrapper">
+        <div class="status">
+          <h3 class="h3">Ваш заказ</h3>
+          <ul class="status-selection">
+            <li class="status-selection__item">
+              <div class="key">Мельница ручная Kornkraft Mia aMola</div>
+              <div class="value">18 990 ₽</div>
+            </li>
+            <li class="status-selection__item">
+              <div class="key">Пшеница БИО, 1 кг (Россия) (2 шт)</div>
+              <div class="value">420 ₽</div>
+            </li>
+          </ul>
+          <ul class="status-discount">
+            <li class="status-discount__item">
+              <div class="key">Размер скидки (5%)</div>
+              <div class="value">420 ₽</div>
+            </li>
+            <li class="status-discount__item">
+              <div class="key">Итого</div>
+              <div class="value">18 344 ₽</div>
+            </li>
+            <li class="status-discount__item">
+              <div class="key">Самовывоз</div>
+              <div class="value">390 ₽</div>
+            </li>
+          </ul>
+          <div class="status-total">
+            <div class="key">Сумма с доставкой</div>
+            <div class="value"><span class="value-set"></span> ₽</div>
+          </div>
+        </div>
+        <h2 class="h2">Оформление заказа</h2>
+        <div class="switcher">
+          <a href="#" class="switcher__case active">Физическое лицо</a>
+          <a href="#" class="switcher__case">Юридическое лицо</a>
+        </div>
+        <form action="#" class="form">
+          <h3 class="h3">Контактные данные</h3>
+          <div class="input-wrap">
+            <label for="form-name">Имя</label>
+            <input type="text" id="form-name">
+            <div class="error-box"></div>
+          </div>
+          <div class="input-wrap">
+            <label for=form-lastname"">Фамилия</label>
+            <input type="text" id="form-lastname">
+            <div class="error-box"></div>
+          </div>
+          <div class="input-wrap">
+            <label for="form-mail">Эл.почта</label>
+            <input type="text" id="form-mail">
+            <div class="error-box"></div>
+          </div>
+          <div class="input-wrap">
+            <label for="form-phone">Номер телефона</label>
+            <input type="text" id="form-phone" class="form-phone">
+            <div class="error-box"></div>
+          </div>
+          <h3 class="h3">Адрес и способ доставки</h3>
+          <div class="input-wrap">
+            <div class="select-wrap">
+              <label for="form-country">Страна</label>
+              <select name="form-country" id="form-country">
+                <option value="Russia">Россия</option>
+                <option value="Germany">Германия</option>
+                <option value="France">Франция</option>
+              </select>
+            </div> 
+          </div>
+          <div class="input-wrap">
+            <label for="form-city">Город</label>
+            <input type="text" id="form-city">
+            <div class="error-box"></div>
+          </div>
+          <h4 class="h4">Способ доставки</h4>
+          <div class="form-radiogroup">
+            <div class="form-radiogroup__item active">
+              <div class="custom-radiobutton"></div>
+              <label for="radio-1">
+              Доставка курьерской службой — 710 ₽
+                <span class="sm">(Срок доставки — 1–3 дня)</span>
+              </label>
+              <input type="radio" id="radio-1" value="710">
+            </div>
+            <div class="form-radiogroup__item">
+              <div class="custom-radiobutton"></div>
+              <label for="radio-2">
+              Доставка транспортной компанией — 210 ₽
+                <span class="sm">
+                  (Данный вид доставки возможен при полной предоплате заказа. Срок доставки — 3–5 дней)
+                </span>
+              </label>
+              <input type="radio" id="radio-2" value="210">
+            </div>
+            <div class="form-radiogroup__item map-switcher">
+              <div class="custom-radiobutton"></div>
+              <label for="radio-3">
+              Самовывоз — 180 ₽
+                <span class="sm">Доставка до пункта самовывоза займет 2–3 дня</span>
+              </label>
+              <input type="radio" id="radio-3" value="180">
+            </div>
+          </div>
+          <div class="map">
+            <h4 class="h4">Пункт самовывоза</h4>
+            <div class="input-wrap">
+              <div class="select-wrap">
+                <label for="form-location">Станция метро</label>
+                <select name="form-location" id="form-location">
+                  <option value="55.762140,37.621570">Кузнецкий мост</option>
+                  <option value="55.757745134825186,37.61936787564087">Театральная</option>
+                  <option value="55.749359033068174,37.58313659626771">Смоленская</option>
+                </select>
+              </div> 
+            </div>
+            <div class="map-wrapper">
+              <div class="map-container" id="map"></div>
+              <div class="map-descr active">
+                Ул. Кузнецкий мост, 9/10 стр.2, офис 204
+                Ежедневно с 12:00 до 22:00
+              </div>
+              <div class="map-descr">
+                Театральная, 9/10 стр.2, офис 204
+                Ежедневно с 12:00 до 22:00
+              </div>
+              <div class="map-descr">
+                Смоленская, 9/10 стр.2, офис 204
+                Ежедневно с 12:00 до 22:00
+              </div>
+            </div>
+          </div>
+          <h3 class="h3">Комментарий к заказу</h3>
+          <textarea name="form-comment" id="form-comment"></textarea>
+          <div class="error-box"></div>
+          <input type="submit" value="К выбору способа оплаты" id="form-submit">
+        </form>
+      </div>
+    </div> 
+  </main>
+  <footer class="main-footer">
+    <div class="wrapper footer-flex">
+      <div class="footer-col">
+        <h5 class="h5">Каталог</h5>
+        <ul class="footer-list">
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Мельницы</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Техника</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Для выпечки</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Посуда</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Прорпщиватели</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Детям</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Чай из Непала</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="h5">Информация</h5>
+        <ul class="footer-list">
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Доставка и самовывоз</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">О магазине</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">10 причин покупать у нас</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Оплата</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Мастер-классы</a></li>
+          <li class="footer-list__item"><a href="#" class="footer-list__link">Блог</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="h5">Контакты</h5>
+        <ul class="footer-list">
+          <li class="footer-list__item">+7 (495) 789 41 43 — Москва</li>
+          <li class="footer-list__item">+7 (812) 385 55 86 — Санкт-Петербург</li>
+          <li class="footer-list__item">+7 (800) 555 33 86 — вся Россия</li>
+        </ul>
+        <a href="#" class="footer-link">Обратная связь</a>
+        <a href="mailto:info@hlebomoli.ru" class="footer-link">info@hlebomoli.ru</a>
+      </div>
+      <div class="footer-col">
+        <h5 class="h5">Вступайте в наш клуб</h5>
+        <div class="footer-text">
+          Подпишитесь на наши новости и будьте 
+          в кусре всех акций, скидок и новых 
+          поступлений, а также самых изысканных 
+          рецептов.
+        </div>
+        <form action="#" class="form-subscribe">
+          <input type="email" placeholder="Ваша эл.почта">
+          <input type="submit" value="">
+        </form>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="footer-line">
+        <div class="copyright">
+        Хлебомолы © 2014–2015
+        </div>
+        <ul class="footer-soc">
+          <li class="footer-soc__item"><a href="#" class="footer-soc__link"><img src="img/soc-1.png" alt="social link"></a></li>
+          <li class="footer-soc__item"><a href="#" class="footer-soc__link"><img src="img/soc-2.png" alt="social link"></a></li>
+          <li class="footer-soc__item"><a href="#" class="footer-soc__link"><img src="img/soc-3.png" alt="social link"></a></li>
+          <li class="footer-soc__item"><a href="#" class="footer-soc__link"><img src="img/soc-4.png" alt="social link"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Google fonts start-->
+
+  <!-- Google fonts end-->
+  <link rel="stylesheet" type="text/css" href="css/libs.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="libs/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="libs/jquery.maskedinput.min.js"></script>
+  <script src="js/final/scripts.min.js"></script>
+</body>
+</html>
